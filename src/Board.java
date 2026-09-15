@@ -43,4 +43,60 @@ public class Board {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public String DiagCheck(char board[][])
+    {
+        if (board[0][0] == 'X' && board[1][1] == 'X' && board[2][2] == 'X')
+        {
+            return "X Player wins!";
+        }
+        if (board[0][0] == 'O' && board[1][1] == 'O' && board[2][2] == 'O')
+        {
+            return "O Player wins!";
+        }
+        if (board[2][0] == 'X' && board[1][1] == 'X' && board[0][2] == 'X')
+        {
+            return "X Player wins!";
+        }
+        if (board[2][0] == 'O' && board[1][1] == 'O' && board[0][2] == 'O')
+        {
+            return "O Player wins!";
+        }
+        return "";
+    }
+
 }
