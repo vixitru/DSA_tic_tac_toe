@@ -38,12 +38,15 @@ public class Board {
             board[row][col] = 'O';
             setPlayer1Turn(true);
         }
-        public String Check(){
-           for(int i=0;i<3;i++){
-               for(int j=0;j<3;j++){
+        public String HorizontalCheck(){
+            boolean xWin = false;
+            boolean oWin = false;
+                if(int i=0; i<3; i++){
+            if (board[0 + 1][0] == 'X' && board[0][0] == 'X' && board[0 + 2][0] == 'X') {
+                xWin = true;
+            }
+        }
 
-               }
-           }
     }
     }
 
